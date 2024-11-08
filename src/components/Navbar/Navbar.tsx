@@ -9,22 +9,21 @@ const Navbar = (props: any) => {
       <nav className="__nav_bar">
         <ul className="__nav_list">
           <li className="__nav_items">
-            <a href="profile">
-              {/* <Typography>Profile</Typography> */}
-                Profile
+            <a href="#profile">
+                PROFILE
             </a>
             <span></span>
           </li>
           <li className="__nav_items">
-            <a href="about">About</a>
+            <a href="#about">ABOUT</a>
             <span></span>
           </li>
           <li className="__nav_items">
-            <a href="skill">Skill</a>
+            <a href="#skill">SKILL</a>
             <span></span>
           </li>
           <li className="__nav_items">
-            <a href="contact">Contact</a>
+            <a href="#contact">CONTACT</a>
             <span></span>
           </li>
         </ul>

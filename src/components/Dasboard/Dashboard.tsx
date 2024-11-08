@@ -2,18 +2,19 @@ import React, { useState } from "react";
 import "./Dashboard.css";
 import Navbar from "../Navbar/Navbar";
 import SkillTiles from "../SkillTiles/SkillTiles";
+import CoverDash from "../CoverPic/CoverDash";
+import Profile from "../ProfileComp/Profile";
+import Contact from "../Contact/Contact";
+import About from "../About/About";
 
 const Dashboard = () => {
-
-  // const [mySkills, SetMySkills] = useState([
-  //   "JAVA","REACT","JAVASCRIPT","MYSQL","PL/SQL","HTML5","CSS3","BOOTSTRAP"
-  // ])
-
   return (
-    <div>
-      <SkillTiles />
-
-      {/* <Navbar/> */}
+    <div className="gird_container">
+      {/* <CoverDash /> */}
+      <Profile/>
+      {/* <SkillTiles /> */}
+      <About/>
+      {/* <Contact/> */}
     </div>
   );
 };

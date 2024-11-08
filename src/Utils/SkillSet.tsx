@@ -1,7 +1,7 @@
 
 
 
-const    skillSet = [
+const   skillSet = [
   {
     name: "React",
     image: "./react.png",
@@ -37,11 +37,11 @@ const    skillSet = [
     image: "./gitlab.png",
     rate: 4,
   },
-  {
-    name: "GitHub",
-    image: "./github.png",
-    rate: 3,
-  },
+  // {
+  //   name: "GitHub",
+  //   image: "./github.png",
+  //   rate: 3,
+  // },
   {
     name: "Bootstrap",
     image: "./bootstrap.png",
