@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 1em;
+    width: fit-content;
+    background-color: rgb(249, 252, 255);
+  
+}
+
+.gird_container{
+    display: grid;
+    /* grid-template-rows:auto; */
+    row-gap: 2em;
+}

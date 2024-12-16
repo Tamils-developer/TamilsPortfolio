@@ -1,0 +1,120 @@
+.main_seg_t {
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  place-items: center;
+}
+
+.about_cont {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em;
+}
+
+._box_con {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1em;
+}
+
+._whatido,
+._whatigot {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  font-size: 2em;
+  font-weight: 600;
+  animation: whatido 1s linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+@keyframes whatido {
+  from {
+    transform: translateX(-10em);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+._box_details {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  margin: 1em;
+  padding: 2em;
+  border: 1px solid rgb(38, 34, 34);
+  box-sizing: border-box;
+  width: inherit;
+  height: inherit;
+}
+
+._do_head {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+._data {
+  font-family: "Montserrat", sans-serif;
+}
+
+._do_icon svg {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+._box {
+  /* animation: boxslideup; */
+  animation: boxslideup 2S linear;
+  /* animation-range: entry 0 cover 40%; */
+  /* animation-timeline: view(); */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes boxslideupm {
+  0% {
+    transform: translateY(10em);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0em);
+  }
+}
+
+@keyframes boxslideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} */
+
+.exp_con {
+  border: 1px solid black;
+  width: inherit;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  place-items: center;
+}
